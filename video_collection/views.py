@@ -22,7 +22,7 @@ def add(request):
                 #messages.info(request,'New video saved!')
                 #todo redirect to list of videos
             except ValidationError:
-                messages.warning(request,'Invalid Youtube URL')
+                messages.warning(request,'Invalid YouTube URL')
             except IntegrityError:
                 messages.warning(request,'You already added that video')
         messages.warning(request,'Please check the data entered.')
